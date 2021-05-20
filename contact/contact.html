@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link href="../utility/contact.css" type="text/css" rel="stylesheet" />
+        <link href="../utility/headerfooter.css" type="text/css" rel="stylesheet" />
+        <link href="../utility/ticket.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <a href="../mailinglist/mailinglist.html"><img src="../media/pinkticket.png" alt="tickets" id="ticket" width="150" height="75" /></a>
+        <a href="../mailinglist/mailinglist.html"><img src="../media/blueticket.png" alt="tickets" id="ticket_2" width="150" height="75" /></a>
+        <header>           
+            <audio src="../media/song.mp3" id="my_audio" loop="loop"></audio>
+            <img src="../media/logo.png" alt="logo" id="logo" width="75" height="110" />
+            <img src="../media/logo.png" alt="logo" id="logo_2" width="75" height="110" />
+            <script>
+                window.onload=function(){
+                    document.getElementById("my_audio").play();
+                }
+            </script>
+            <h1>Contact</h1>
+            <h3>Questions Problems Comment Concerns Suggetions</h3>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../mailinglist/mailinglist.html">Mailing List</a>
+                <a href="../howto/howto.html">How To</a>
+                <a href="../locations/location.html">Loactions</a>
+                <a href="contact.html">Contact</a>
+                <a href="../faq/faq.html" class="last">FAQ</a>
+            </nav>
+        </header>
+        <br />
+        <div id="content">
+            <br />
+            <h2>Send Us An Email</h2>
+            <h6>Or Call 1 (800) 000-0000</h6>
+            <form onsubmit="alert('Thank you for the feed back!')">
+                <label>First name</label><br />
+                <input type="text" name="fname" placeholder="Joe" required="required"><br />
+                <label>Last name</label><br />
+                <input type="text" name="lname" placeholder="Schmoe" required="required"><br />
+                <label>Email</label><br />
+                <input type="email" name="email" placeholder="example@ex.com" required="required"><br />
+                <label>Phone Number</label><br />
+                <input type="number" name="age" placeholder="(000) 000-0000" required="required"><br />
+                <label>Tell us. Ask us.</label><br />
+                <input type="text" id="user" name="user" required="required"><br />
+                <input type="submit">
+                <input type="reset">
+            </form>
+            <br />
+        </div>
+        <br />
+        <footer>
+            <p>Copyright &copy; 2020 Jumpin' Juice Company</p>
+        </footer>
+    </body>
+</html>    

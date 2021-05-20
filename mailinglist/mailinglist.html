@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mailing List Signup</title>
+        <link href="../utility/mailinglist.css" type="text/css" rel="stylesheet" />
+        <link href="../utility/headerfooter.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>           
+            <audio src="../media/song.mp3" id="my_audio" loop="loop"></audio>
+            <img src="../media/logo.png" alt="logo" id="logo" width="75" height="110" />
+            <img src="../media/logo.png" alt="logo" id="logo_2" width="75" height="110" />
+            <script>
+                window.onload=function(){
+                    document.getElementById("my_audio").play();
+                }
+            </script>
+            <h1>Mailing List Signup</h1>
+            <h3>A Free Drink for Singing Up</h3>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="mailinglist.html">Mailing List</a>
+                <a href="../howto/howto.html">How To</a>
+                <a href="../locations/location.html">Loactions</a>
+                <a href="../contact/contact.html">Contact</a>
+                <a href="../faq/faq.html" class="last">FAQ</a>
+            </nav>
+        </header>
+        <div id="content">
+            <br />
+            <h2>Fill Out The Fields Below To Get A Free Drink</h2>
+            <p id="date"></p>
+            <script>
+                var date = new Date();
+                document.getElementById("date").innerHTML = date.toDateString();
+            </script>
+            <form onsubmit="window.open('coupon/coupon.html')">
+                <label>First name</label><br />
+                <input type="text" name="fname" placeholder="Joe" required="required"><br />
+                <label>Last name</label><br />
+                <input type="text" name="lname" placeholder="Schmoe" required="required"><br />
+                <label>Email</label><br />
+                <input type="email" name="email" placeholder="example@ex.com" required="required"><br />
+                <label>Age</label><br />
+                <input type="number" name="age" placeholder="30" required="required"><br />
+                <label>Gender</label><br />
+                <input type="text" name="gender" placeholder="Man-Woman-Other" required="required"><br />
+                <input type="submit">
+                <input type="reset">
+            </form>
+            <br />
+            <img src="../media/orangeticket.png" alt="ticket" width="150" height="75" />
+        </div>
+        <br />
+        <footer>
+            <p>Copyright &copy; 2020 Jumpin' Juice Company</p>
+        </footer>
+    </body>
+</html>

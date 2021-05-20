@@ -1,0 +1,4 @@
+body {
+    background-color: rgb(167, 253, 167);
+}
+#content {height: 500px; border:3px solid rgb(0, 54, 54); padding: 0 2.5%; text-align: center; background-color: rgb(160, 234, 247)}

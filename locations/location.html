@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Locations</title>
+        <link href="../utility/location.css" type="text/css" rel="stylesheet" />
+        <link href="../utility/headerfooter.css" type="text/css" rel="stylesheet" />
+        <link href="../utility/ticket.css" type="text/css" rel="stylesheet" />
+		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script>
+			var map;
+			function displayMap()
+			{
+				//create a new map
+				var location = new google.maps.LatLng(39.218705, -96.976542);
+				var options = { zoom: 4, center: location, mapTypeId: google.maps.MapTypeId.ROADMAP};
+				var map = new google.maps.Map( document.getElementById( 'mapLoc' ), options );
+				//first store
+				var store_one = new google.maps.LatLng(40.001571, -75.807796);
+				var one_marker = new google.maps.Marker( { position: store_one, map: map, title: "First Jumpin' Juice"});
+				var one_info = new google.maps.InfoWindow( { content: "<p>Our Very First Location: 2020 Adams, Polo City, Pa</p>" });
+				google.maps.event.addListener( one_marker, 'click', function() { one_info.open( map, one_marker );});
+                //store
+				var store_two = new google.maps.LatLng(35.001571, -76.807796);
+				var two_marker = new google.maps.Marker( { position: store_two, map: map, title: "Store"});
+				var two_info = new google.maps.InfoWindow( { content: "<p>13 Swinster, Balt Bay City, NC</p>" });
+				google.maps.event.addListener( two_marker, 'click', function() { two_info.open( map, two_marker );});
+                //store
+				var store_three = new google.maps.LatLng(41.001571, -72.307796);
+				var three_marker = new google.maps.Marker( { position: store_three, map: map, title: "Floating Store"});
+				var three_info = new google.maps.InfoWindow( { content: "<p>The Only Juictraunt on the water, Sakes Harbor, NY</p>" });
+				google.maps.event.addListener( three_marker, 'click', function() { three_info.open( map, three_marker );});
+                //store
+				var store_four = new google.maps.LatLng(42.001571, -100.307796);
+				var four_marker = new google.maps.Marker( { position: store_four, map: map, title: "Store"});
+				var four_info = new google.maps.InfoWindow( { content: "<p>445 Kit Street,Falsh City, NE</p>" });
+				google.maps.event.addListener( four_marker, 'click', function() { four_info.open( map, four_marker );});
+                //store
+				var store_five = new google.maps.LatLng(33.001571, -87.307796);
+				var five_marker = new google.maps.Marker( { position: store_five, map: map, title: "Store"});
+				var five_info = new google.maps.InfoWindow( { content: "<p>173 Bolk Avenue,Mount Hight City, AL</p>" });
+				google.maps.event.addListener( five_marker, 'click', function() { five_info.open( map, five_marker );});
+                //store
+				var store_six = new google.maps.LatLng(37.001571, -120.307796);
+				var six_marker = new google.maps.Marker( { position: store_six, map: map, title: "Most Popular Store"});
+				var six_info = new google.maps.InfoWindow( { content: "<p>844 Main Boulevard,San Venroe,Ca</p>" });
+				google.maps.event.addListener( six_marker, 'click', function() { six_info.open( map, six_marker );});
+			} 
+		</script>
+	</head>
+    <body onload="displayMap(), document.getElementById('my_audio').play();">
+        <a href="../mailinglist/mailinglist.html"><img src="../media/pinkticket.png" alt="tickets" id="ticket" width="150" height="75" /></a>
+        <a href="../mailinglist/mailinglist.html"><img src="../media/orangeticket.png" alt="tickets" id="ticket_2" width="150" height="75" /></a>
+        <header>         
+            <audio src="../media/song.mp3" id="my_audio" loop="loop"></audio>
+            <img src="../media/logo.png" alt="logo" id="logo" width="75" height="110" />
+            <img src="../media/logo.png" alt="logo" id="logo_2" width="75" height="110" />
+            <h1>Locations</h1>
+            <h3>We Are So Easy To Find So Pay Us A Visit</h3>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../mailinglist/mailinglist.html">Mailing List</a>
+                <a href="../howto/howto.html">How To</a>
+                <a href="location.html">Loactions</a>
+                <a href="../contact/contact.html">Contact</a>
+                <a href="../faq/faq.html" class="last">FAQ</a>
+            </nav>
+        </header>
+        <br />
+        <div id="content">
+            <h2>Our Locations</h2>
+            <div id="mapLoc"> </div>
+            <p>With locations all over the country we aren't very hard to find.  Every store has friendly staff and is a great place to get a quick drink.  There is no reason not to come visit our friendly staff and drink some of the finest juice ever.</p>
+        </div>
+        <br />
+        <footer>
+            <p>Copyright &copy; 2020 Jumpin' Juice Company</p>
+        </footer>
+	</body>
+</html>

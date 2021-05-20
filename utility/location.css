@@ -1,0 +1,11 @@
+body {background-color: aliceblue;}
+#content {border:3px solid rgb(0, 54, 54); padding: 0 2.5%; text-align: center; background-color: rgb(176, 230, 205)}
+
+@media only screen and (max-width: 47.9999em){
+    body{display: block;}
+    #mapLoc {width: 408px; height: 288px;}
+}
+@media only screen and (min-width: 48em){
+    #content{overflow: scroll; height: 600px;}
+    #mapLoc {width: 650px; height: 450px;}
+}

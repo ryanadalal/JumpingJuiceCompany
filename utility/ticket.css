@@ -1,0 +1,21 @@
+#ticket {position: fixed; animation-name: anim; animation-duration: 4s; animation-iteration-count: infinite;}
+#ticket_2 {position: fixed; animation-name: anim; animation-duration: 4s; animation-iteration-count: infinite;} 
+
+@media only screen and (max-width: 47.9999em){
+  #ticket {position: absolute; left: 5px; width: 75px; height: 37px;}
+  #ticket_2 {position: absolute; right: 5px; width: 75px; height: 37px;}
+  @keyframes anim {
+    0%   {top: 120px;}
+    50%  {top: 170px;}
+    100% {top: 120px;}
+  }
+}
+@media only screen and (min-width: 48em){
+  #ticket {position: fixed; top: 0; left: 100px; }
+  #ticket_2 {position: fixed; top: 0; right: 100px; }
+  @keyframes anim {
+    0%   {top: 0;}
+    50%  {top: 35px;}
+    100% {top: 0;}
+  }
+}

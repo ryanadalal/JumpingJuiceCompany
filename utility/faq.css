@@ -1,0 +1,5 @@
+body {
+    background-color: darkseagreen;
+}
+h3 {text-align: center;}
+#content {overflow: scroll; border: 3px solid rgb(0, 54, 54); padding: 0 2.5%; background-color: rgb(109, 172, 180);}

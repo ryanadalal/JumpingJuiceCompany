@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(189, 196, 83);
+}
+#content {
+    border:3px solid rgb(0, 54, 54); 
+    padding: 0 2.5%; 
+    background-color: palevioletred;
+}
+aside {
+    border: 3px solid rgb(0, 54, 54); 
+    padding: 0 2.5%; 
+    background-color: rgb(150, 247, 237); 
+    text-align: left;
+}
+h3 {text-align: center;}
+
+@media only screen and (max-width: 47.9999em){
+    body{display: block;}
+}
+@media only screen and (min-width: 48em){
+    #content{
+        height: 500px; 
+        float: left; 
+        width: 40%; 
+        margin-top: 10px;
+        margin-left: 2.5%; 
+        overflow: scroll;
+    }
+    aside:first-of-type{
+        float: left; 
+        width: 15%; 
+        margin-top: 10px; 
+        height: 500px; 
+        overflow: scroll;
+    }
+    aside:last-of-type{
+        float: left; 
+        width: 20%; 
+        margin-left: 2.5%; 
+        margin-top: 10px; 
+        height: 500px; 
+        overflow: scroll;
+    }
+    br {clear: both;}
+}
